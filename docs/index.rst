@@ -5,6 +5,7 @@ pygame 4000
    :maxdepth: 2
    :caption: Contents:
 
+   sdl2_basics_tutorial_fundamentals
 
 
 Indices and tables
