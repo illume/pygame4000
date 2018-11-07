@@ -9,6 +9,7 @@
 | movies, music, microcode   |                 |
 +----------------------------+-----------------+
 
-.. |pygame4000for| image:: images/what-is-a-pygame-4000-for.png
-   :scale: 100%
+.. |pygame4000for| image:: docs/images/what-is-a-pygame-4000-for.png
+   :scale: 50%
+   :width: 200%
    :align: middle
