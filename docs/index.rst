@@ -6,6 +6,7 @@ pygame 4000
    :caption: Contents:
 
    sdl2_basics_tutorial_fundamentals
+   pixel_perfect_collision_detection
 
 
 Indices and tables
