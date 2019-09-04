@@ -10,6 +10,7 @@ pygame 4000
    sound_generation_and_drawing
    port_and_market
    unit_test
+   arduino_pygame
 
    interpreter
    interpreter/01_interpreter

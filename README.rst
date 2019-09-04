@@ -6,7 +6,7 @@
 | René Dudfield on things                                        |                 |
 | he finds interesting.                                          | |pygame4000for| |
 |                                                                |                 |
-| Draft/alpha, work in progress.                                 |                 |
+| **Draft/alpha, work in progress.**                             |                 |
 |                                                                |                 |
 | movies, music, microcode                                       |                 |
 |                                                                |                 |
@@ -15,6 +15,9 @@
 | - `Sound Generation and Visualization <sound_generation_>`__   |                 |
 | - `Python intro for game programming <python_game_>`__         |                 |
 | - `Let's make a shit JavaScript Interpreter! <interpreter_>`__ |                 |
+| - `How to port and market games <port_and_market_>`__          |                 |
+| - `Let's write a unit test! <unit_test_>`__                    |                 |
+| - `Arduino; Serial & pixels for breakfast <arduino_pygame_>`__ |                 |
 +----------------------------------------------------------------+-----------------+
 
 
@@ -26,6 +29,11 @@ I’m doing a book project! With the aim to cover C, python, and GLSL with pygam
 .. _sound_generation: docs/sound_generation_and_drawing.rst
 .. _python_game: docs/python_game_programming.rst
 .. _interpreter: docs/interpreter.rst
+.. _port_and_market: docs/port_and_market.rst
+.. _unit_test: docs/unit_test.rst
+.. _port_and_market: docs/port_and_market.rst
+.. _arduino_pygame: docs/arduino_pygame.rst
+
 
 .. |pygame4000for| image:: docs/images/what-is-a-pygame-4000-for.png
    :scale: 50%
