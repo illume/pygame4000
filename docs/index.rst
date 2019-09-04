@@ -9,6 +9,7 @@ pygame 4000
    pixel_perfect_collision_detection
    sound_generation_and_drawing
    port_and_market
+   unit_test
 
    interpreter
    interpreter/01_interpreter
