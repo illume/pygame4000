@@ -8,6 +8,12 @@ pygame 4000
    sdl2_basics_tutorial_fundamentals
    pixel_perfect_collision_detection
    sound_generation_and_drawing
+
+   interpreter
+   interpreter/01_interpreter
+   interpreter/02_interpreter
+   interpreter/03_interpreter
+
    python_game_programming
    python_game_programming/01_introduction
    python_game_programming/02_python_intro
