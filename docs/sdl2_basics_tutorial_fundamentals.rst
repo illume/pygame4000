@@ -1,5 +1,7 @@
-SDL2 basics tutorial fundamentals
-=================================
+SDL2 basics tutorial fundamentals in C
+======================================
+
+Until text comdes, see "../code/hey.c"
 
 
 This is a sentence.
