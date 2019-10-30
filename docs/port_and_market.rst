@@ -1,6 +1,5 @@
-.. contents::
-   :depth: 3
-..
+How to port and market games using #python and #pygame.
+=======================================================
 
 You've spent two years making a game, but now want other people to see
 it?
@@ -16,7 +15,7 @@ github/gitlab/bitbucket perhaps).  But how and where else can you share
 it?
 
 a few platforms to port to
-==========================
+--------------------------
 
 -  itch.io and windows
 -  windows store?
@@ -31,8 +30,8 @@ a few platforms to port to
 -  debian
 -  redhat/fedora
 
-Make it a python package.
-=========================
+Make it a python package
+------------------------
 
 | Some of the tools work more easily with your package as a python
   package. Working with all the different tools is sort of hard, and
@@ -48,7 +47,7 @@ Make it a python package.
 |  
 
 pyinstaller
------------
+~~~~~~~~~~~
 
 | https://www.pyinstaller.org/
 | This can make ones for linux, windows, and mac.
@@ -58,7 +57,7 @@ pyinstaller
       pyinstaller --onefile --windowed --icon=icon.ico .py
 
 Windows
-=======
+-------
 
 | pynsist and pyinstaller can be used.
 | https://github.com/takluyver/pynsist
@@ -67,13 +66,13 @@ Windows
   are putting your app on the Steam store for example).
 
 Windows code signing
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 -  https://github.com/pyinstaller/pyinstaller/wiki/Recipe-Win-Code-Signing
 -  https://docs.microsoft.com/en-us/windows/uwp/packaging/create-certificate-package-signing
 
 Flatpak
-=======
+-------
 
 | apps on linux - https://flatpak.org/
 | Here's an example of making a pygame one.
@@ -82,13 +81,13 @@ Flatpak
   http://docs.flatpak.org/en/latest/
 
 pypi
-====
+----
 
 | The python package system can mean your app can be available for
   everyone who can use pip. Which is an audience in the millions.
 
 Mac
-===
+---
 
 | pyinstaller is probably the best option at the moment. If your game is
   open source, then you could use TravisCI for free to make builds with
@@ -106,7 +105,7 @@ Mac
 -  https://developer.apple.com/support/code-signing/
 
 iOS
-===
+---
 
 | It's not easy, but possible.
 | With pygame 2 this should be possible since it uses the new SDL2.
@@ -124,7 +123,7 @@ iOS
   the cost of your app. https://developer.apple.com/
 
 Steam
-=====
+-----
 
 | There's a few games released using pygame on steam. Here are two
   threads of games released:
@@ -142,14 +141,15 @@ Steam
       pyinstaller --onefile --windowed --icon=icon.ico .py
 
 SteamworksPy
-------------
+~~~~~~~~~~~~
 
 | A python module for the C++ steam sdk.
   https://github.com/Gramps/SteamworksPy
 | Made by someone who has released their game (using pygame) on steam.
 
+
 Itch.io
-=======
+-------
 
 | "itch.io is an open marketplace for independent digital creators with
   a focus on independent video games."
@@ -159,7 +159,7 @@ Itch.io
 | Quite a few people have released their pygame games on itch.io.
 
 Android
-=======
+-------
 
 | This isn't really possible to do well at the moment without a bit of
   work.
@@ -172,7 +172,7 @@ Android
   unmaintained, and does not work with more recent Android devices.
 
 Web
-===
+---
 
 | There's not really an 'export for web' option at the moment. It is
   possible with both CPython and SDL as well as SDL2 working on
@@ -181,10 +181,10 @@ Web
   https://github.com/iodide-project/pyodide
 
 Building if you do not have a windows/mac/linux machine
-=======================================================
+-------------------------------------------------------
 
 CI tools
---------
+~~~~~~~~
 
 | If your game is open source, you can use these systems to build your
   game remotely for free.
@@ -200,7 +200,7 @@ CI tools
   https://github.com/mu-editor/mu
 
 Virtualbox
-----------
+~~~~~~~~~~
 
 | With virtualbox (and other emulators) you can run some systems on your
   local machine. Which means you do not need to buy a new development
@@ -215,14 +215,14 @@ Virtualbox
   machines.
 
 Writing portable python code
-============================
+----------------------------
 
 | Some old (but still valid) basic advice on making your game portable:
   https://www.pygame.org/wiki/distributing
 | Things like naming your files case sensitively.
 
 Announcing your game.
-=====================
+---------------------
 
 | Generic Indie game marketing guides all apply here.
 | Some python/pygame specific avenues for marketing and announcing...
@@ -242,14 +242,14 @@ Announcing your game.
 
 |
 
-Icons.
-======
+Icons
+-----
 
 | Each platform has slightly different requirements for icons. This
   might be a nice place to link to all the requirements (TODO).
 
 Making a game trailer (for youtube)
-===================================
+-----------------------------------
 
 | You may not need to make the best trailer, or even a good trailer.
   Just a screen capture of your game might be 'good enough' and is
@@ -269,7 +269,7 @@ Making a game trailer (for youtube)
    Budget <https://gamedevelopment.tutsplus.com/tutorials/how-to-make-an-indie-game-trailer-with-no-budget--cms-20825>`__
 
 Animated gif
-============
+------------
 
 | These are useful for sharing on twitter and other such places, so
   people can see game play.
