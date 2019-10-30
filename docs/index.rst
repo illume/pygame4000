@@ -5,8 +5,10 @@ pygame 4000
    :maxdepth: 2
    :caption: Contents:
 
-   sdl2_basics_tutorial_fundamentals
    pixel_perfect_collision_detection
+   awesome_goodies_for_pygame
+   sdl2_basics_tutorial_fundamentals
+
    sound_generation_and_drawing
    port_and_market
    unit_test
@@ -17,6 +19,8 @@ pygame 4000
    interpreter/02_interpreter
    interpreter/03_interpreter
 
+   python_best_practices
+
    python_game_programming
    python_game_programming/01_introduction
    python_game_programming/02_python_intro
@@ -25,6 +29,8 @@ pygame 4000
    python_game_programming/05_parts_of_a_game
    python_game_programming/06_abstraction
    python_game_programming/07_minimal_game
+
+
 
 
 Indices and tables
