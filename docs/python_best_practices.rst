@@ -1,10 +1,15 @@
 python best practices
 =====================
 
+Every project is somewhat different. Every reason to code is different.
+
+Therefore best practices should be different. You won't do things the same way hacking up a weekend game for fun as you would grinding away in a cubicle implementing an aircraft safety system.
+
+
 There's a lot of information out there about python.
 Lots of tools to choose between.
 
-This guide aims to point you in the right direction.
+This guide aims to point you in the right direction on a few topics.
 
 
 Testing
@@ -44,9 +49,9 @@ It's fine, and good to write just a README.md file.
 It's more important that you have:
 
 - what it is, what it does, who you are, and why?
-- examples how to use it
--
-
+- examples of how to use it
+- how to learn it, and how to use it to do certain tasks
+- detailed reference
 
 
 Write documentation with
@@ -54,10 +59,14 @@ Write documentation with
 <http://www.sphinx-doc.org/en/stable/index.html>`_ and RestructuredText.
 
 You can write narative style documentation, and also generate API documentation.
-
+If you want to do something more than a basic README.md in your repo, then this is the way to go.
 
 Type documentation
 ~~~~~~~~~~~~~~~~~~
+
+First, remember that type hints are not needed for python and for all types of projects.
+But they can be useful.
+
 
 Document types with the typing module, rather than specify them in docstrings.
 Because then the types can be checked with a tool called mypy in CI and in some code editors.
@@ -81,6 +90,7 @@ From sphinx-autodoc-typehints `sphinx-autodoc-typehints
 
 There is an `example of how to document your python functions
 <https://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html>`_
+
 
 
 Literate programming
@@ -132,17 +142,18 @@ with `poetry
 Because poetry is safe, easy, and addresses the whole workflow.
 
 
-Unfriendly tools like `pip
-<https://pip.pypa.io/en/stable/>`_ are still good to learn.
+The `pip
+<https://pip.pypa.io/en/stable/>`_ tool is still good to learn. However it has a few dangerous edges if you are a newbie. It also does not address the whole workflow of using and publishing packages.
 
-Working inside a virtual environment to keep projects separated.
-Because each project may require different dependencies
-installing them system wide will not work.
+Work inside a virtual environment to keep projects separated.
+Because each project may require different dependencies installing them system wide will not work.
 
 
 
 A private python index
 ----------------------
+
+This is only needed if you want to keep some of your code private.
 
 Private Python packages can be stored in a private python index.
 `devpi
