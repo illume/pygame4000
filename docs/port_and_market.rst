@@ -46,6 +46,26 @@ Make it a python package
   technology.
 |  
 
+
+Where to put your files?
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+The `stuntcat community game <https://github.com/pygame/stuntcat/>`_ is setup as
+an example of how you can package your game.
+
+It's not the only way to structure your files,
+but there are some advantages to doing it this way.
+
+- Follows the python packaging guidelines. It's just a python package.
+- Uses free Appveyor and TravisCI accounts to make Windows, Mac, and Linux binaries.
+- Is set up to run tests when you push to github.
+- Makes a windows, mac, linux, and python package.
+- Uses different python packages like pymunk, thorpy, pyscroll.
+- It will be kept working, and ported to more and more platforms as time goes on.
+
+So if you're looking for inspiration on how to structure your files, it's a good place to look.
+
+
 pyinstaller
 ~~~~~~~~~~~
 
