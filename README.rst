@@ -18,7 +18,7 @@
 | - `How to port and market games <port_and_market_>`__          |                 |
 | - `Let's write a unit test! <unit_test_>`__                    |                 |
 | - `Arduino; Serial & pixels for breakfast <arduino_pygame_>`__ |                 |
-| - `Awesome goodies for pygame <awesome_goodies_for_pygame_>`__ |                 |
+| - `Awesome pygame <awesome_goodies_for_pygame_>`__             |                 |
 +----------------------------------------------------------------+-----------------+
 
 

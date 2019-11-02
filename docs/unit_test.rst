@@ -1,6 +1,5 @@
-.. contents::
-   :depth: 3
-..
+Let's write a unit test!
+========================
 
 | A unit test is a piece of code which tests one thing works well in
   isolation from other parts of software. In this guide, I'm going to
@@ -10,14 +9,14 @@
   projects in general.
 
 A minimal test.
-===============
+---------------
 
 | **What pygame.draw.ellipse should do**:
   http://www.pygame.org/docs/ref/draw.html#pygame.draw.ellipse
 | **Where to put the test**:
   https://github.com/pygame/pygame/blob/master/test/draw_test.py
 
-   | 
+   |
 
    ::
 
@@ -26,7 +25,7 @@ A minimal test.
           surf = pygame.Surface((320, 200))
           pygame.draw.ellipse(surf, (255, 0, 0), (10, 10, 25, 20))
 
-| 
+|
 | All the test does is call the draw function on the surface with a
   color, and a rectangle. That's it. A minimal, useful test. If you have
   a github account, you can even edit the test file in the browser to
@@ -34,7 +33,7 @@ A minimal test.
   or someone else on the internet and ask them to do add it to pygame.
 
 But why write a unit test anyway?
-=================================
+---------------------------------
 
 | Unit tests help pygame make sure things don't break on multiple
   platforms. When your code is running on dozens of CPUs and just as
@@ -51,12 +50,12 @@ But why write a unit test anyway?
    The simplest test is to just call the function. Just calling it is a
    great first test. Easy, and useful.
 
-| 
+|
 | At the time of writing there are 39 functions that aren't even called
   when running the pygame tests. Why not join me on this adventure?
 
 Let's write a unit test!
-========================
+------------------------
 
 | In this guide I'm going to write a test for an pygame.draw.ellipse to
   make sure a thick circle has the correct colors in it, and not lots of
@@ -66,7 +65,7 @@ Let's write a unit test!
   environment.
 
 Grab a fork, and let's dig in.
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 | `Set up git for
   github <https://help.github.com/articles/set-up-git/>`__ if you
@@ -103,7 +102,7 @@ Grab a fork, and let's dig in.
 
       OK
 
-| 
+|
 | You'll see all of the tests in the test/ folder.
 | Browse the test folder online:
   https://github.com/pygame/pygame/tree/master/test
@@ -114,7 +113,7 @@ Grab a fork, and let's dig in.
   Including on how to write a test that requires manual interaction.
 
 Standard unittest module.
-=========================
+-------------------------
 
 | pygame uses the standard python unittest module. With a few
   enhancements to make it nicer for developing C code.
@@ -127,7 +126,7 @@ Standard unittest module.
 | https://docs.python.org/3/library/unittest.html
 
 How to run a single test?
-=========================
+-------------------------
 
 | Running all the tests at once can take a while. What if you just want
   to run a single test?
@@ -136,7 +135,7 @@ How to run a single test?
   "def test_ellipse" function.
 
 So, let's run the test...
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 | ~/pygame/ $ python test/draw_test.py DrawModuleTest.test_ellipse
 | Traceback (most recent call last):
@@ -149,7 +148,7 @@ So, let's run the test...
 Starting with failure. Our test isn't there yet.
 ================================================
 
-| 
+|
 | Good. This fails. It's because we don't have a test called "def
   test_ellipse" in there yet. What there is, is a method called
   'todo_test_ellipse'. This is an extension pygame testing framework has
@@ -162,13 +161,13 @@ Starting with failure. Our test isn't there yet.
   "Easy pickings".
 
 Digression: "Low hanging fruit", "help wanted". 
-================================================
+-----------------------------------------------
 
 .. container::
 
       *Something that's easy to do.*
 
-| 
+|
 | A little digression for a moment... what is low hanging fruit?
 | Low hanging fruit is easy to get off the tree. You don't need a
   ladder, or robot arms with a claw on the end. So I guess that's what
@@ -180,7 +179,7 @@ Digression: "Low hanging fruit", "help wanted". 
 `pygame low hanging fruit <https://github.com/pygame/pygame/issues?q=is%3Aissue+is%3Aopen+label%3A%22Low+Hanging+Fruit%22>`__
 =============================================================================================================================
 
-| 
+|
 | Many projects keep a list of "low hanging fruit", or "help wanted"
   issues. Like the `pygame low hanging
   fruit <https://github.com/pygame/pygame/issues?q=is%3Aissue+is%3Aopen+label%3A%22Low+Hanging+Fruit%22>`__
@@ -197,7 +196,7 @@ Digression: "Low hanging fruit", "help wanted". 
   there for help.
 
 Digression: Contribution guide.
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 | There's usually also a contribution guide.  Like the `pygame
   Contribute <https://www.pygame.org/wiki/Contribute>`__ wiki page. Or
@@ -209,7 +208,7 @@ Digression: Contribution guide.
   also inside github issues, and pull requests.
 
 Back to the test.
-=================
+-----------------
 
 | The unittest module arranges tests inside functions that start with
   "test_" that live in a class.
