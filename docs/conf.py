@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'pygame4000'
-copyright = '2018, René Dudfield'
+copyright = '2018-2019, René Dudfield'
 author = 'René Dudfield'
 
 # The short X.Y version
-version = ''
+version = '0.0.1'
 # The full version, including alpha/beta/rc tags
-release = ''
+release = '0.0.1.dev2'
 
 
 # -- General configuration ---------------------------------------------------
@@ -158,9 +158,21 @@ texinfo_documents = [
 
 
 # -- Options for Epub output -------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-epub-output
 
 # Bibliographic Dublin Core info.
 epub_title = project
+epub_author = u'René Dudfield'
+epub_publisher = u'René Dudfield'
+# epub_scheme = 'UUID'
+# epub_identifier = 'xxx-xxx-xxx'
+# epub_uid = epub_identifier
+# epub_cover = ('', 'epub-cover-RS.html')
+# epub_tocdepth = 3
+# epub_tocdup = False
+# epub_exclude_files = ['_static/xx.xml']
+
+
 
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
