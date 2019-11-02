@@ -1,5 +1,5 @@
-More pygame to make your brain hurt
-===================================
+Python game programming part 4 - More pygame to make your brain hurt
+====================================================================
 
 From last weeks pygame we are now going to move on to a more featureful
 demonstration. This lecture is based on the Chimp line by line tutorial
@@ -719,7 +719,7 @@ Assignment:
 
 
 Next
-====
+~~~~
 
 
 `Part Five <_05_parts_of_a_game>`__

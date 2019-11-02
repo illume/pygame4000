@@ -1,9 +1,8 @@
-Parts of a game
-===============
-
+Python game programming part 5 - Parts of a game
+================================================
 
 Forgetting the details: Wrapping away implementation details.
-=============================================================
+-------------------------------------------------------------
 
 Whenever I approach a library I am usually less interesting in the
 library than what I can do with it. Because of this, I don't really care
@@ -76,6 +75,6 @@ to your game.
 
 
 Next
-====
+~~~~
 
 `Part Six <_06_abstraction>`__

@@ -1,9 +1,9 @@
-Abstraction
-===========
+Python game programming part 6 - Abstraction
+============================================
 
 
-Wrapping up the libraries and forgetting the details.
-=====================================================
+Wrapping up the libraries and forgetting the details
+----------------------------------------------------
 
 Your problem: you want to play a sound, but don't know where to start
 with this library you are trying out.
@@ -33,7 +33,7 @@ making something simpler still!
 
 
 Goals for our sounds module
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 One goal for making this sound wrapper will be to make it as simple as
 possible to load and play sounds. One line to play a sound would be
@@ -48,8 +48,8 @@ queueing sounds. Also loading files from a different directory should be
 possible.
 
 
-Disadvantages to wrapping up a library.
-=======================================
+Disadvantages to wrapping up a library
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Your simplifications may make it hard to fully take advantage of certain
 features. This can be an easy mistake to make if you do not really know
@@ -60,8 +60,8 @@ write, test, and maintain. So, are the benefits of wrapping a library
 enough to make it worth doing? This is up to you to decide.
 
 
-Our sounds module.
-==================
+Our sounds module
+-----------------
 
 Here is how we will use our new, simple to use sounds module.
 
@@ -87,7 +87,7 @@ it loads the sound for you.
 
 
 Extra features for our sound module
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are a couple of extra features that are in this sound module.
 Which maybe you don't need. They are hidden by using default arguments.
@@ -112,7 +112,7 @@ implementation of our sounds module.
 
 
 Implementing our sound module
-=============================
+-----------------------------
 
 As you may know by now a python module can simply be the code inside a
 .py file.
@@ -299,7 +299,7 @@ microphone :)
 
 
 Next
-====
+~~~~
 
 `Part Seven <_07_minimal_game>`__
 

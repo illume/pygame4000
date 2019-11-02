@@ -1,5 +1,5 @@
-Making a game
-=============
+Python game programming part 7 - Make a game
+============================================
 
 This lecture we are going to run through making a game. Or what some
 people would call a prototype of a game.
@@ -18,7 +18,7 @@ It could also be expanded later with more features if we want to.
 
 
 A slightly detailed game design.
-================================
+--------------------------------
 
 First thing we do is think about what features will be in the first
 version of our game. To finish the game quickly we want to make the
@@ -34,7 +34,7 @@ to make the game work.
 
 
 Limited game play features
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There will be two rhinos which eat up the balls. We may want to add more
 rhinos later, but two will be the minimum number.
@@ -67,7 +67,7 @@ have to close the mouth to swallow the balls.
 
 
 Game play uncertainty.
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 At this stage we have a small design of our game. But a few things are
 uncertain. The main one is, will this be fun?
@@ -96,7 +96,7 @@ the design as we go.
 
 
 Graphical design
-----------------
+~~~~~~~~~~~~~~~~
 
 When we consider graphical design for a game, it is often best to start
 with place holder graphics. This allows us to quickly test out the game
@@ -130,7 +130,7 @@ improve the graphics.
 
 
 Drawing the game design
-~~~~~~~~~~~~~~~~~~~~~~~
+'''''''''''''''''''''''
 
 |starving_rhino_game_concept|
 
@@ -159,8 +159,8 @@ If I were to do sounds, some could be:
 -  Rhino noises. Hrmmm, these would be harder to make. Be creative!
 
 
-User input design.
-------------------
+User input design
+-----------------
 
 Some people say the user interface to your game is the most important
 part. There are a few reasons they say this. One is that if the player
@@ -294,7 +294,7 @@ the option in the first version of the game.
 
 
 Coding the game
-===============
+---------------
 
 Now we dive into the coding of the game. I like to do it in small steps.
 First get the screen up. Then draw the basic elements to the screen.
@@ -302,8 +302,8 @@ Then maybe add in some keyboard handling, and some mouse handling. Below
 I describe the process I take making the game.
 
 
-Getting something on screen.
-----------------------------
+Getting something on screen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I'll make some basic code to get a few things on screen first.
 
@@ -356,8 +356,8 @@ want to know more there is a good discussion on the topic at
 http://ludumdare.com/forums/viewtopic.php?topic=141&forum=2&22
 
 
-Drawing the balls.
-------------------
+Drawing the balls
+~~~~~~~~~~~~~~~~~
 
 For the balls I am simply going to use the pygame.draw.circle function.
 To draw a filled in circle.

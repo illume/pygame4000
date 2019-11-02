@@ -1,5 +1,5 @@
-Python game programming - Introduction
-======================================
+Python game programming part 1 - Introduction
+=============================================
 
 
 What are these articles going to teach you?

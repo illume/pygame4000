@@ -26,8 +26,8 @@ Herein lies an introduction to using python for game programming.
 
 `Parts of a game <05_parts_of_a_game_>`__
 
-- TODO TODO
-- TODO TODO
+- Different parts of a game.
+- Loading and displaying graphics, sound, interfacing with OS.
 
 `Abstraction <06_abstraction_>`__
 
@@ -36,8 +36,7 @@ Herein lies an introduction to using python for game programming.
 
 `A Minimal Game <07_minimal_game_>`__
 
-- TODO TODO
-- TODO TODO
+- minimal game design, sound design, input design, and graphic design.
 
 
 .. _01_introduction: python_game_programming/01_introduction.rst

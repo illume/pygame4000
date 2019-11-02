@@ -1,5 +1,6 @@
-Introduction to pygame
-======================
+Python game programming part 3 - Introduction to pygame
+=======================================================
+
 
 Now onto the flashy graphics!
 
@@ -307,38 +308,40 @@ http://pygame.org/docs/ref/event.html
 
 
 Exercises
-=========
+---------
 
 
 Move the head
--------------
+~~~~~~~~~~~~~
 
 -  Make the monkeys head be drawn 35 pixels to the right. Then make it
    drawn 40 pixels from the top of the window.
 
 
-Quit on any key pressed.
-------------------------
+Quit on any key pressed
+~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Find out how to make the program quit when you press any key. Once
    you find out, make your program quit when any key is pressed.
 
 
 Find the size of the monkey surface
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 
 -  Print to the console the size of the monkey surface.
 
 
-Move the head when pressing a key.
-----------------------------------
+Move the head when pressing a key
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  When pressing the 's' key make the monkey move to x = 0 and y =0.
    Make it move to x = 35 y = 40 when the 'd' key is pressed.
 
 
 Read pygame examples
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 -  Read through some of the pygame examples. Run them see what they do.
    You probably won't understand them all, but you will likely get a
@@ -351,7 +354,7 @@ Read pygame examples
 
 
 Next
-====
+~~~~
 
 In the next article I will be showing you:
 

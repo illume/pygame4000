@@ -30,7 +30,7 @@ Let's explore existing JavaScript implementations.
   spend a few hours or even days reading through the links from there.
 
 narcissus - js in js.
-=====================
+---------------------
 
 | Narcissus is a javascript implementation written in javascript (with
   some SpiderMonkey language extensions). It is written by the same
@@ -57,7 +57,7 @@ narcissus - js in js.
   javascript.
 
 Spider monkey.
-==============
+--------------
 
 | `Spider Monkey <http://www.mozilla.org/js/spidermonkey/>`__ is the
   original JavaScript implementation used by Netscape, and the Mozilla
@@ -87,7 +87,7 @@ Spider monkey.
   production.*"""
 
 Google V8.
-==========
+----------
 
 | Written in C++, javascript and assembler. Uses hidden classes, and
   generates machine code at run time.
@@ -103,14 +103,14 @@ Google V8.
   badest V8 JavaScript engine around.
 
 JSLint.
-=======
+-------
 
 | JSLint is written in JavaScript and uses a TDOP approach to the parser
   like we are using. I won't discuss this, since it is documented well
   elsewhere.
 
 Rhino
-=====
+-----
 
 | Rhino can run as either an interpreter or a java byte code generator.
   It's hosted by the mozilla project (who make firefox). It complements
@@ -142,7 +142,7 @@ Rhino
   page has some great information on the rhino javascript engine.
 
 KJS
-===
+---
 
 | `KJS <http://en.wikipedia.org/wiki/KJS_%28KDE%29>`__ is the KDE
   JavaScript implementation for the konqueror browser. It was the parent
@@ -151,7 +151,7 @@ KJS
   instead. KJS is written in C++, for the QT library.
 
 JavaScriptCore, Squirrelfish, Nitro
-===================================
+-----------------------------------
 
 | You can browse the source here:
   http://trac.webkit.org/browser/trunk/Source/JavaScriptCore
@@ -163,7 +163,7 @@ JavaScriptCore, Squirrelfish, Nitro
   in there for things like debuggers, and profilers.
 
 Closed source JavaScript implementations
-========================================
+----------------------------------------
 
 |
 | There are a few JavaScript implementations that are closed source. The
@@ -174,7 +174,7 @@ Closed source JavaScript implementations
   be learned without the source code.
 
 pypy javascript
-===============
+---------------
 
 | The pypy project started a javascript interpreter now too.
 | https://bitbucket.org/pypy/lang-js/src/de89ec32a7dc/js/javascript-interpreter.txt
@@ -197,7 +197,7 @@ pypy javascript
   expected.
 
 So what have we learned then?
-=============================
+-----------------------------
 
 |
 | We see that most of the implementations use a hand written parser. We
@@ -213,7 +213,7 @@ So what have we learned then?
   lot of it can be automated.
 
 Exercise for next time
-======================
+----------------------
 
 |
 | Choose One(1) of the implementations, build it, run it, and modify it
@@ -221,7 +221,7 @@ Exercise for next time
   with it.
 
 Further reading.
-================
+----------------
 
 | This whole article is "further reading", but we can never have too
   much to read. Can we!?

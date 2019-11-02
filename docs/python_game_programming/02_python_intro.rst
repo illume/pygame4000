@@ -1,5 +1,5 @@
-Introduction to Python
-======================
+Python game programming part 2 - Introduction to Python
+=======================================================
 
 What is Python?
 
@@ -13,7 +13,7 @@ you to declare types before compiling.
 
 
 Variables
----------
+~~~~~~~~~
 
 Python variables work on references, and have automatic garbage
 collection so you do not need to worry about allocating or freeing
@@ -32,7 +32,7 @@ problem.
 
 
 Code Blocks
------------
+~~~~~~~~~~~
 
 Python structures it's code based on whitespace (spaces or tabs). This
 is unusual for programming languages, and is the biggest factor keeping
@@ -86,7 +86,7 @@ rest of the line is considered commented.
 
 
 Why Python Code Blocks are Good
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Why change the standard way to format code? It's been in practice for
 40 years, why change now?**
@@ -182,7 +182,7 @@ works well, and is encouraged. This is a Good Thing.
 
 
 Python Is About You
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 Everything about Python is created to make development easier for the
 programmer, as opposed to making programming easier for the compiler or
@@ -199,7 +199,7 @@ Eckel <http://www.artima.com/intv/aboutme.html>`__
 
 
 Zen of Python
--------------
+~~~~~~~~~~~~~
 
 This sums up Python's goals and aspirations nicely.
 
@@ -229,19 +229,21 @@ This sums up Python's goals and aspirations nicely.
 
 
 Using Python
-============
+------------
 
 Now that you have a little insight into what Python is, you will want to
 see it in action a little. These lectures are not intended to be full
 Python tutorials, because there are a lot of good resources out there
-already for this (see `LectureAppendix <LectureAppendix>`__). What we
+already for this (see `TODOAppendix <TODOAppendix>`__). What we
 will do is show you how to use the basics of Python, how to do
 interesting things with it, how to apply these techniques to game
 development, and finally how to make games with this knowledge.
 
 
+TODO: bring in TODOAppendix.
+
 Python from the Interpreter
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 My first experience with interactively interpreted languages was using
 Prolog many years ago, and it made a profound impact on me. I always
@@ -273,7 +275,7 @@ TODO: this path stuff is old and wrong.
 
 
 Interpreter Conventions
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 In your interpreter the starting characters '>>> ' are telling you that
 it is expecting a new line. The characters '... ' is telling you that it
@@ -290,7 +292,7 @@ or CRTL+D in Unix.
 
 
 Live, from your living room... It's Python!
--------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now that we have the formalities out of the way, it's time to kick
 things into gear and check out Python in action.
@@ -340,7 +342,7 @@ interpreter so you can see them.
 
 
 Basic Variable Types
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 Let's cover a few different types of data that can be put into a Python
 variable.
@@ -469,7 +471,7 @@ we will cover later.
 
 
 Introduction to Container Variable Types
-----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Up to now we have seen some pretty standard programming types, but
 containers are where Python shines. If for no other reason, this feature
@@ -550,7 +552,7 @@ was no key of 1.
 
 
 Using Container Variables
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Feeling under whelmed by the Amazing Python Containers? Hopefully not
 too much, but at first look they are not so much as amazing as simple
@@ -641,7 +643,7 @@ build a Sequence.
 
 
 Return of the Slice
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 Remember slicing strings? Well, I said strings were sequences and any
 sequences can be sliced, so let's try it out on a list:
@@ -706,7 +708,7 @@ As you can see, slicing can give you powerful access to sequences.
 
 
 Run-Time Type Checking
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 Python may not require you to specify variable types in your code, but
 that does not mean Python does not care what your variable types are.
@@ -782,11 +784,11 @@ they are performed. Where they are not expected, errors are thrown.
 
 
 Exercises
-=========
+---------
 
 
 How do you get rid of the trailing space?
------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
@@ -794,7 +796,7 @@ How do you get rid of the trailing space?
    'PYTHON! PYTHON! PYTHON! '
 
 What does this code do?
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
@@ -805,14 +807,14 @@ What does this code do?
          a[a[item]] = item
 
 How do you find out what functions you can perform on a dictionary?
--------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 How would you find the 5th item from the last in a sequence of 20 items?
-------------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Without trying it first, is this legal?
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
@@ -820,6 +822,6 @@ Without trying it first, is this legal?
 
 
 Next
-====
+~~~~
 
 `Part Three <_03_pygame_introduction>`__
