@@ -1,4 +1,4 @@
 Sphinx
 sphinx-autobuild
 restview
-
+rst2pdf==0.95.dev0
