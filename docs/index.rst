@@ -8,6 +8,7 @@ pygame 4000
    pixel_perfect_collision_detection
    awesome_goodies_for_pygame
    sdl2_basics_tutorial_fundamentals
+   c_post_modern_tooling
 
    sound_generation_and_drawing
    port_and_market

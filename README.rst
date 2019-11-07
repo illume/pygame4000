@@ -20,6 +20,7 @@
 | - `Arduino; Serial & pixels for breakfast <arduino_pygame_>`__ |                 |
 | - `Awesome pygame <awesome_goodies_for_pygame_>`__             |                 |
 | - `Python best practices <python_best_practices_>`__           |                 |
+| - `Post modern C tooling <c_post_modern_tooling_>`__           |                 |
 +----------------------------------------------------------------+-----------------+
 
 
@@ -35,7 +36,7 @@ I’m doing a book project! With the aim to cover C, python, and GLSL with pygam
 .. _port_and_market: docs/port_and_market.rst
 .. _arduino_pygame: docs/arduino_pygame.rst
 .. _awesome_goodies_for_pygame: docs/awesome_goodies_for_pygame.rst
-.. _python_best_practices: docs/python_best_practices.rst
+.. _c_post_modern_tooling: docs/c_post_modern_tooling.rst
 
 Combined with the pygame docs, and examples - you're pretty good to go!
 Happy hacking!
