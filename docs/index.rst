@@ -5,6 +5,15 @@ pygame 4000
    :maxdepth: 2
    :caption: Contents:
 
+   python_game_programming
+   python_game_programming/01_introduction
+   python_game_programming/02_python_intro
+   python_game_programming/03_pygame_introduction
+   python_game_programming/04_pygame_more
+   python_game_programming/05_parts_of_a_game
+   python_game_programming/06_abstraction
+   python_game_programming/07_minimal_game
+
    pixel_perfect_collision_detection
    awesome_goodies_for_pygame
    sdl2_basics_tutorial_fundamentals
@@ -22,14 +31,6 @@ pygame 4000
 
    python_best_practices
 
-   python_game_programming
-   python_game_programming/01_introduction
-   python_game_programming/02_python_intro
-   python_game_programming/03_pygame_introduction
-   python_game_programming/04_pygame_more
-   python_game_programming/05_parts_of_a_game
-   python_game_programming/06_abstraction
-   python_game_programming/07_minimal_game
 
 
 

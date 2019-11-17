@@ -181,7 +181,7 @@ a file called sounds.py
            """ Used for optionally printing debug messages.
            """
            if self._debug_level > debug_level:
-               print x
+               print(x)
 
 
 

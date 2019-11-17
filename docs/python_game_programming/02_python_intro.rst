@@ -122,9 +122,9 @@ compared to Python:
 ::
 
    if something:
-      doStuff()
+      do_stuff()
       while 1:
-         doMore()
+         do_more()
 
 Each of these require you to different eye-gymnastics, and over large
 file introduce errors. Especially when code block brackets are optional
@@ -234,13 +234,10 @@ Using Python
 Now that you have a little insight into what Python is, you will want to
 see it in action a little. These lectures are not intended to be full
 Python tutorials, because there are a lot of good resources out there
-already for this (see `TODOAppendix <TODOAppendix>`__). What we
-will do is show you how to use the basics of Python, how to do
-interesting things with it, how to apply these techniques to game
-development, and finally how to make games with this knowledge.
+already for this. What we will do is show you how to use the basics of
+Python, how to do interesting things with it, how to apply these techniques
+to game development, and finally how to make games with this knowledge.
 
-
-TODO: bring in TODOAppendix.
 
 Python from the Interpreter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -258,7 +255,7 @@ To load up your interpreter run the command "python.exe" on windows:
 
 Start -> Run -> Type: "python"
 
-Or go to the C:\Python22\\ and double-click "python.exe".
+Or go to the C:\Python38\\ and double-click "python.exe".
 
 You should now see a window like this (but taller, I shrunk mine):
 
@@ -269,9 +266,7 @@ problem with your installation, or you are clicking in the wrong place.
 You may need to add the Python directories to your path. You can do this
 from your Control Panel -> System -> Advanced -> Environment Variables.
 
-To PATH, add C:\Python22\\ and C:\Python22\Scripts\\
-
-TODO: this path stuff is old and wrong.
+To PATH, add C:\Python38\\ and C:\Python38\Scripts\\
 
 
 Interpreter Conventions
@@ -584,7 +579,7 @@ this container goodness:
 ::
 
    >>> for item in d:
-   ...    print item
+   ...    print(item)
    ...
    5
    5.5
@@ -610,7 +605,7 @@ Let's see it work over our dictionary.
    >>> c.keys()
    ['a', 'c', 'b']
    >>> for key in c.keys():
-   ...    print '%s: %d' % (key, c[key])
+   ...    print('%s: %d' % (key, c[key]))
    ...
    a: 0
    c: 2

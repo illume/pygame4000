@@ -14,16 +14,26 @@ of pygame's abilities, like creating a graphics window, loading images
 and sound files, rendering TTF text, and basic event and mouse handling.
 
 The program and images can be found inside the standard source
-distribution of pygame. On windows look in the c:\Program
-Files\Pygame-Docs\examples directory. On Debian/Linux you can find the
-examples in /usr/share/doc/python2.2-pygame/examples/
+distribution of pygame. To find the examples use
 
-TODO: fix example path stuff.
+::
+
+  python -c "import pygame.examples;print(pygame.examples.__file__)"
+
+
+Alternatively you can find the examples by typing this into the
+interpreter REPL.
+
+::
+
+  >>> import pygame.examples
+  >>> print(pygame.examples.__file__)
+
 
 With your text editor open up chimp.py in that directory.
 
 You should have been able to run chimp.py from the command line. If not,
-go back to `LectureOne <LectureOne>`__ and figure out how. As we go on
+go back to `Part 1 introduction <01_introduction>`__ and figure out how. As we go on
 you'll be changing a few things in the chimp.py, so you may want to make
 a backup copy.
 
@@ -40,7 +50,7 @@ Import Modules
 This is the code that imports all the needed modules into your program.
 It also checks for the availability of some of the optional pygame
 modules.
-`Modules <http://www.honors.montana.edu/%7Ejjc/easytut/easytut/node14.html>`__
+Modules <https://docs.python.org/3/tutorial/modules.html>`__
 are a grouping of code, or a library.
 
 ::
@@ -49,8 +59,8 @@ are a grouping of code, or a library.
    import pygame
    from pygame.locals import *
 
-   if not pygame.font: print 'Warning, fonts disabled'
-   if not pygame.mixer: print 'Warning, sound disabled'
+   if not pygame.font: print('Warning, fonts disabled')
+   if not pygame.mixer: print('Warning, sound disabled')
 
 In the next line, we import the pygame package. When pygame is imported
 it imports all the modules belonging to pygame. Some pygame modules are
@@ -90,7 +100,7 @@ This code is from chimp.py which should be open in your text editor.
        try:
            image = pygame.image.load(fullname)
        except pygame.error, message:
-           print Cannot load image:, name
+           print("Cannot load image:", name)
            raise SystemExit, message
        image = image.convert()
        if colorkey is not None:
@@ -115,7 +125,7 @@ probably go and read those sections as well.
        fullname = os.path.join('data', name)
 
 First two lines of the load_image
-`function <http://www.honors.montana.edu/%7Ejjc/easytut/easytut/node9.html>`__/
+`function <https://docs.python.org/3/tutorial/controlflow.html#defining-functions>`__/
 
 def is used to tell python that you are starting a new function. A
 function is a piece of code which does something. It means you don't
@@ -129,8 +139,7 @@ you can just call:
 Further on in the code you see the try, and except being used. This is
 for error handling. You try to load the image, and if there is an
 unexpected error the code in the except block gets called. Read up more
-about exceptions here
-http://www.honors.montana.edu/%7Ejjc/easytut/easytut/node18.html
+about `errors and exceptions <https://docs.python.org/3/tutorial/errors.html>`__.
 
 
 Loading images explained
@@ -193,7 +202,7 @@ Loading sound explained
        try:
            sound = pygame.mixer.Sound(fullname)
        except pygame.error, message:
-           print Cannot load sound:, wav
+           print("Cannot load sound:", fullname)
            raise SystemExit, message
        return sound
 
@@ -340,7 +349,7 @@ When you do a:
 
    >>> def x():
    ...     """prints the letter x"""
-   ...     print "x"
+   ...     print("x")
    ...
    >>> help(x)
 
@@ -348,7 +357,7 @@ When you do a:
 
    x()
        prints the letter x
-   >>> print x.__doc__
+   >>> print(x.__doc__)
    prints the letter x
    >>>
 

@@ -401,9 +401,9 @@ them to two surfaces for us.
        increment = int(radius / 4)
        for x in range(4):
            iradius = radius - (x * increment)
-           print iradius
+           print(iradius)
            isize = iradius * 2
-           icolor = [0,0,0]
+           icolor = [0, 0, 0]
 
            # we increment the color.  if it is bigger than 255 we make it 255.
            icolor[0] = max(color[0] + (x * 15), 255)

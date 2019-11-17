@@ -34,7 +34,7 @@ Why python for games?
    program whilst it is running! This allows you to tweak your game
    quicker than compiled languages will allow.
 
-   An `open source <http://www.opensource.org/>`__ implementation is
+   An `open source <https://www.opensource.org/>`__ implementation is
    pretty important too. The executable to big? Remove parts of python.
    Recompile it in ways which make your particular game faster. Make all
    sorts of changes. You don't have too do these things. But if you need
@@ -46,9 +46,9 @@ Python, and python gaming websites.
 -  There's a few websites you should explore, to gain true mastery of
    the python game programming way ;)
 
-   -  http://www.python.org/
+   -  https://www.python.org/
 
-   -  http://www.pygame.org/
+   -  https://www.pygame.org/
 
    Although we will be teaching python as we go, you may want to check
    out some other tutorials. If you don't know python allready, you
@@ -56,29 +56,20 @@ Python, and python gaming websites.
    two weeks. If python is your first programming language, this is an
    excellent tutorial to follow:
 
-   -  http://www.honors.montana.edu/%7Ejjc/easytut/easytut/
-
-   This tutorial is a quick introduction, for those who want to dive
-   right in.
-
-   -  http://www.hetland.org/python/instant-hacking.php
-
-   Here's a big list of tutorials at the main python website.
-
-   -  http://www.python.org/doc/Newbies.html
+   -  https://docs.python.org/3/tutorial/
 
    Some gaming websites you should check out include:
 
-   -  http://gamedev.net/
+   -  https://gamedev.net/
 
-   -  http://gamasutra.com/
+   -  https://gamasutra.com/
 
-   -  http://ludumdare.com/
+   -  https://ldjam.com/
 
-   Of particular interest to new games programmers may be the `game
-   dictionary <http://gamedev.net/dict/>`__. If you come accross any
-   words you don't know there might be the best place to look first for
-   an explanation.
+   Of particular interest to new games programmers may be the `Glossary of video
+   game terms <https://en.wikipedia.org/wiki/Glossary_of_video_game_terms>`__.
+   If you come accross any words you don't know there might be the best place
+   to look first for an explanation.
 
 
 Installing your python programming environment.
@@ -87,6 +78,15 @@ Installing your python programming environment.
 -  Time to get into the programming.
 
 https://www.pygame.org/wiki/GettingStarted
+
+Many programming books and tutorials have an installation section.
+Which are almost immediately out of date, and are sometimes not tested.
+
+So the GettingStarted page was started where things are up to date.
+pygame is backwards compatible. Code written 20 years ago works today.
+
+
+Don't worry, relax, and check out https://www.pygame.org/wiki/GettingStarted
 
 
 Test your python installation.
@@ -103,8 +103,8 @@ Test your python installation.
    ::
 
       import pygame
-      print dir(pygame)
-      print dir()
+      print(dir(pygame))
+      print(dir())
 
    That should print a bunch of stuff. The import command tells python
    to load that module. The print command is used to print stuff. duh.
@@ -117,15 +117,15 @@ Test your python installation.
 
    That shows you documentation on a particular object/
 
-   `function <http://www.honors.montana.edu/%7Ejjc/easytut/easytut/node9.html>`__/
-   `variable <http://www.honors.montana.edu/%7Ejjc/easytut/easytut/node5.html#SECTION00510000000000000000>`__.
+   `function <https://docs.python.org/3/tutorial/controlflow.html#defining-functions>`__/
+   `variable <https://docs.python.org/3/tutorial/introduction.html>`__.
    Try out help on a few other things inside of the pygame module. eg
    help(pygame.sprite) Check out the documentation for python, and
    pygame at these places.
 
-   -  Documentation for pygame: http://pygame.org/docs/index.html
+   -  Documentation for pygame: https://pygame.org/docs/index.html
 
-   -  Documentation for python: http://python.org/docs/
+   -  Documentation for python: https://python.org/docs/
 
    It's good to know where to look for info when you get stuck, or need
    to know more details.

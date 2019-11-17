@@ -15,7 +15,7 @@ Import Modules
 --------------
 
 Below is the code that imports all the needed modules into your program.
-`Modules <http://www.honors.montana.edu/%7Ejjc/easytut/easytut/node14.html>`__
+`Modules <https://docs.python.org/3/tutorial/modules.html>`__
 are a grouping of code, or a library.
 
 Open a command prompt and go into the pygame examples directory. Then
@@ -30,8 +30,8 @@ Try typing that into your interpreter like this: |import_stuff|
 
 You can look up the documentation for these modules:
 `pygame <http://pygame.org/docs/ref/pygame.html>`__,
-`os <http://python.org/doc/current/lib/module-os.html>`__,
-`sys <http://python.org/doc/current/lib/module-sys.html>`__.
+`os <https://docs.python.org/3/library/os.html>`__,
+`sys <https://docs.python.org/3/library/sys.html>`__.
 
 You may also want to try using dir() and help() functions on those
 modules :)
@@ -45,7 +45,7 @@ Initializing pygame
 -------------------
 
 Now we initialize all imported pygame modules. This is done with the
-`pygame.init() <http://pygame.org/docs/ref/pygame.html#init>`__
+`pygame.init() <https://www.pygame.org/docs/ref/pygame.html#pygame.init>`__
 function.
 
 ::
@@ -69,7 +69,7 @@ wide, short window.
    window = pygame.display.set_mode((468, 60))
 
 Check out the documentation for
-`pygame.display.set_mode <http://pygame.org/docs/ref/pygame_display.html#set_mode>`__,
+`pygame.display.set_mode <https://pygame.org/docs/ref/display.html#pygame.display.set_mode>`__,
 
 Now we set a caption on the window. The caption is the text in the
 middle of the window bar. Set the text to what ever you like! Change
@@ -80,7 +80,7 @@ middle of the window bar. Set the text to what ever you like! Change
    pygame.display.set_caption('Monkey Fever')
 
 Check out the documentation for
-`pygame.display.set_caption <http://pygame.org/docs/ref/pygame_display.html#set_caption>`__,
+`pygame.display.set_caption <https://www.pygame.org/docs/ref/display.html#pygame.display.set_caption>`__,
 
 Finally we get the display surface representing a screen.
 
@@ -92,7 +92,7 @@ A surface represents either the screen or an area in memory where images
 are held.
 
 Check out the documentation for
-`pygame.Surface <http://pygame.org/docs/ref/Surface.html>`__,
+`pygame.Surface <https://pygame.org/docs/ref/surface.html>`__,
 
 
 Constructing the monkey filename
@@ -101,7 +101,7 @@ Constructing the monkey filename
 ::
 
    >>> monkey_head_file_name = os.path.join("data","chimp.bmp")
-   >>> print monkey_head_file_name
+   >>> print(monkey_head_file_name)
    data\chimp.bmp
 
 This creates a relative pathname to the file. In this example all the
@@ -111,8 +111,22 @@ By using the
 function, a pathname will be created that works for whatever platform
 the game is running on.
 
-On windows the pygame examples directory is in: C:\\Program
-Files\Pygame-Docs\examples\.
+
+To open the pygame documentation you can run this command.
+
+::
+
+   python -m pygame.docs
+
+
+To find the folder where the examples are type this command into the
+interpreter.
+
+::
+
+  >>> import pygame.examples
+  >>> print(pygame.examples.__file__)
+
 
 The relative path "data\chimp.bmp" is relative to the examples
 directory. The full path name would be
@@ -122,13 +136,13 @@ directory. The full path name would be
    "C:\\Program Files\Pygame-Docs\examples\data\chimp.bmp"
 
 On debian linux the pygame examples directory is in
-/usr/share/doc/python2.2-pygame/examples/ The relative path
+/usr/share/doc/python3.7-pygame/examples/ The relative path
 "data/chimp.bmp" is relative to that examples directory. The full path
 name would be
 
 ::
 
-   "/usr/share/doc/python2.2-pygame/examples/data/chimp.bmp"
+   "/usr/share/doc/python3.7-pygame/examples/data/chimp.bmp"
 
 Hopefully you can see that *os.path.join()* is one of the python
 functions which helps you write code which will run on multiple
@@ -136,7 +150,6 @@ platforms. The same code should run on windows, linux boxes, macs, and
 other types of machines.
 
 
-TODO: clean up the path stuff.
 
 
 Loading the monkey head image
@@ -151,7 +164,7 @@ Now we get to load the monkey head image.
 simple eh?
 
 Have a look at the documentation for the
-`pygame.image.load <http://pygame.org/docs/ref/pygame_image.html#load>`__
+`pygame.image.load <https://pygame.org/docs/ref/image.html#pygame.image.load>`__
 function.
 
 
@@ -209,7 +222,7 @@ Adding a way to quit.
          if event.type == QUIT:
             sys.exit(0)
          else:
-            print event
+            print(event)
 
 We are defining a function with this code. This function does two
 things:
@@ -287,7 +300,7 @@ Then run it, and see all the events fly by on the console!
          if event.type == QUIT:
             sys.exit(0)
          else:
-            print event
+            print(event)
 
    while True:
       input(pygame.event.get())
@@ -348,7 +361,7 @@ Read pygame examples
    feel for some other pygame code. For those new to python you should
    also have a read through some of the python tutorials:
 
-   -  http://python.org/doc/current/tut/tut.html
+   -  https://docs.python.org/3/tutorial/
 
    -  http://python.org/doc/Intros.html
 
