@@ -29,7 +29,7 @@ run python.
 Try typing that into your interpreter like this: |import_stuff|
 
 You can look up the documentation for these modules:
-`pygame <http://pygame.org/docs/ref/pygame.html>`__,
+`pygame <https://pygame.org/docs/ref/pygame.html>`__,
 `os <https://docs.python.org/3/library/os.html>`__,
 `sys <https://docs.python.org/3/library/sys.html>`__.
 
@@ -202,7 +202,7 @@ screen.
 There are more complicated things which you can do with updating the
 display, which we will explain in the upcomming lectures. If you want to
 learn more about updating the display you can find out here -
-http://pygame.org/docs/ref/pygame_display.html#flip
+https://www.pygame.org/docs/ref/display.html#pygame.display.flip
 
 Why do you have to flip the display? To see your graphics drawn.
 Flipping the display is your way of telling pygame that you have
@@ -264,7 +264,7 @@ Here we have an infinite loop. While True is true it will keep looping.
 As true is going to stay true for a long time, it will keep going
 on(probably until the program exits).
 
-`pygame.event.get <http://pygame.org/docs/ref/event.html#pygame.event.get>`__
+`pygame.event.get <https://www.pygame.org/docs/ref/event.html#pygame.event.get>`__
 is used to see what is happening in the program. It returns a list of
 events. We pass this list to the input function we defined above.
 
@@ -317,7 +317,14 @@ out to the console. If you press a mouse button you will get events for
 that. If you move the mouse you will get events.
 
 Read the pygame docs for events, they are quite good -
-http://pygame.org/docs/ref/event.html
+https://www.pygame.org/docs/ref/event.html
+
+
+Also try out this example
+
+::
+
+    python -m pygame.examples.eventlist
 
 
 Exercises
@@ -363,7 +370,7 @@ Read pygame examples
 
    -  https://docs.python.org/3/tutorial/
 
-   -  http://python.org/doc/Intros.html
+   -  https://python.org/doc/Intros.html
 
 
 Next

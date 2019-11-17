@@ -153,7 +153,7 @@ transparent.
 The first thing this function does is create a full pathname to the
 file. In this example all the resources are in a "data" subdirectory. By
 using the
-`os.path.join <http://python.org/doc/current/lib/module-os.path.html>`__
+`os.path.join <https://docs.python.org/3/library/os.path.html#os.path.join>`__
 function, a pathname will be created that works for whatever platform
 the game is running on.
 
@@ -166,7 +166,7 @@ interactive interpreter. In the interactive interpreter type:
    help(os.path.join)
 
 Next we load the image using the
-`pygame.image.load <http://pygame.org/docs/ref/pygame_image.html#load>`__
+`pygame.image.load <https://www.pygame.org/docs/ref/image.html#pygame.image.load>`__
 function. We wrap this function in a try/except block, so if there is a
 problem loading the image, we can exit gracefully. After the image is
 loaded, we make an important call to the convert() function. This makes
@@ -178,7 +178,7 @@ Images can be in many different color formats. For example RGB with 8
 bits for red, green and blue. Or 8 bit indexed color, or RGBA
 (Red,Green,Blue,Alpha). The more bits used for each pixel on an image,
 the more colors it can show. For an explanation of surfaces check out
-http://pygame.org/docs/ref/Surface.html
+https://www.pygame.org/docs/ref/surface.html
 
 Last, we set the colorkey for the image. If the user supplied an
 argument for the colorkey argument we use that value as the colorkey for
@@ -208,17 +208,17 @@ Loading sound explained
 
 Next is the function to load a sound file. The first thing this function
 does is check to see if the
-`pygame.mixer <http://pygame.org/docs/ref/pygame_mixer.html>`__ module
+`pygame.mixer <https://www.pygame.org/docs/ref/mixer.html>`__ module
 was imported correctly. If not, it returns a small class instance that
 has a dummy play method. This will act enough like a normal
-`Sound <http://pygame.org/docs/ref/Sound.html>`__ object for this game
+`Sound <https://www.pygame.org/docs/ref/mixer.html#pygame.mixer.Sound>`__ object for this game
 to run without any extra error checking.
 
 If you're wondering what a class is read up on them at these places:
 
--  http://python.org/doc/current/tut/node11.html,
+-  https://python.org/doc/current/tut/node11.html,
 
--  http://diveintopython.org/fileinfo_divein.html,
+-  https://diveintopython.org/fileinfo_divein.html,
 
 -  http://ibiblio.org/obp/thinkCS/python/english/chap12.htm.
 
@@ -280,7 +280,7 @@ over them one at a time here.
 The players fist is represented by the class above.
 
 It is derived from the Sprite class included in the
-`pygame.sprite <http://pygame.org/docs/ref/pygame_sprite.html>`__
+`pygame.sprite <https://www.pygame.org/docs/ref/sprite.html>`__
 module. The init function is called when new instances of this class are
 created. The first thing we do is be sure to call the init function for
 our base class. This allows the Sprite's init function to prepare our
@@ -295,7 +295,7 @@ advantages. Mainly the sprite classes are used for organising drawing of
 images. We want to draw as little as possible, which the sprite classes
 can do for us by keeping track of where the images we draw go. If you
 want to know more about sprites read
-http://pygame.org/docs/tut/SpriteIntro.html.
+https://www.pygame.org/docs/tut/SpriteIntro.html.
 
 All sprites have an update() method. This function is typically called
 once per frame. It is where you should put code that moves and updates
@@ -312,7 +312,7 @@ Don't be a square; detour into the world of Rect
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ok a short detour from the Sprite classes to describe Rects.
-`Rect <http://pygame.org/docs/ref/Rect.html>`__ objects are simply
+`Rect <https://www.pygame.org/docs/ref/rect.html>`__ objects are simply
 classes which represent a rectangle. However they are very featureful.
 
 They are used throughout pygame to help you organise and optimize
@@ -333,7 +333,7 @@ to see if the target(usually the rect for our unfortunate chimp) has
 collided with the fists rect attribute. It uses a slightly smaller rect
 than the fists rect, so that it is slightly harder to punch the chimp.
 It uses the
-`Rect.inflate <http://pygame.org/docs/ref/Rect.html#inflate>`__ method
+`Rect.inflate <https://www.pygame.org/docs/ref/rect.html#pygame.Rect.inflate>`__ method
 to make a smaller rect.
 
 
@@ -442,7 +442,7 @@ The \_walk method creates a new position for the monkey by moving the
 current rect by a given offset. If this new position crosses outside the
 display area of the screen, it reverses the movement offset. It also
 mirrors the image using the
-`pygame.transform.flip <http://pygame.org/docs/ref/pygame_transform.html#flip>`__
+`pygame.transform.flip <https://www.pygame.org/docs/ref/transform.html#pygame.transform.flip>`__
 function. This is a crude effect that makes the monkey look like he's
 turning the direction he is moving.
 
@@ -450,7 +450,7 @@ The \_spin method is called when the monkey is currently "dizzy". The
 dizzy attribute is used to store the current amount of rotation. When
 the monkey has rotated all the way around (360 degrees) it resets the
 monkey image back to the original unrotated version. Before calling the
-`transform.rotate <http://pygame.org/docs/ref/pygame_transform.html#rotate>`__
+`transform.rotate <https://www.pygame.org/docs/ref/transform.html#pygame.transform.rotate>`__
 function, you'll see the code makes a local reference to the function
 simply named "rotate". There is no need to do that for this example, it
 is just done here to keep the following line's length a little shorter.
@@ -734,4 +734,4 @@ Next
 `Part Five <_05_parts_of_a_game>`__
 
 
-.. |chimpshot| image:: http://pygame.org/docs/tut/chimp/chimpshot.gif
+.. |chimpshot| image:: https://www.pygame.org/docs/_images/chimpshot.gif
